@@ -1,0 +1,401 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Root */
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+
+  /* Edited */
+  --Red-1: hsl(0, 62%, 68%);
+  --Green-1: hsl(154, 59%, 45%);
+  --Green-2: hsla(154, 59%, 51%, 0.7);
+  --Green-3: hsla(153, 33%, 47%, 0.7);
+  --Dark-Blue-1: hsla(249, 10%, 26%, 0.6);
+}
+
+/* Styling Page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--Red);
+  background-image: url(./images/bg-intro-desktop.png);
+  padding: 0 20px;
+}
+
+/* Styling Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 70px auto;
+}
+
+/* Styling Container One */
+.top p {
+  color: white;
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.bottom p {
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* Styling Container Two */
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.trial {
+  background-color: var(--Blue);
+  color: white;
+  width: 570px;
+  height: 67px;
+  font-size: 17px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.trial p span {
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: white;
+  width: 570px;
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  padding-bottom: 14px;
+  position: relative;
+}
+
+input {
+  color: var(--Dark-Blue);
+  width: 100%;
+  height: 62px;
+  padding: 0px 35px;
+  border-radius: 5px;
+  border: 2px solid var(--Grayish-Blue);
+  outline: none;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  border: 2px solid var(--Blue);
+}
+
+::placeholder {
+  color: var(--Dark-Blue-1);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  width: 100%;
+  height: 58px;
+  background-color: var(--Green);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 2px var(--Green-1);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: var(--Green-2);
+  box-shadow: 0 1px 0 2px var(--Green-3);
+}
+
+i {
+  font-size: 25px;
+  position: absolute;
+  top: 18px;
+  right: 25px;
+}
+
+.form-group i {
+  display: none;
+}
+
+.form-group.success input {
+  border: 3px solid var(--Green);
+}
+
+.form-group.error input {
+  border: 3px solid var(--Red-1);
+  color: var(--Red-1);
+}
+
+.form-group.success i.fa-check-circle {
+  display: block;
+  color: var(--Green);
+  background-color: white;
+}
+
+.form-group.error i.fa-exclamation-circle {
+  display: block;
+  color: var(--Red);
+  background-color: white;
+}
+
+.form-group small {
+  display: none;
+  color: var(--Red-1);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin-bottom: 7px;
+  text-align: right;
+}
+
+.form-group.error small {
+  display: block;
+}
+
+.text-center p {
+  color: var(--Grayish-Blue);
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.text-center p span {
+  color: var(--Red);
+  font-weight: 700;
+}
+
+/* Styling Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 60px 0;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsiveness */
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  /* Styling Container */
+  .container {
+    gap: 30px;
+  }
+
+  /* Styling Container One */
+  .container-1 {
+    max-width: 400px;
+  }
+
+  .top p {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .top p br {
+    display: none;
+  }
+
+  .bottom p br {
+    display: none;
+  }
+
+  /* Styling Container Two */
+  .trial {
+    width: 420px;
+  }
+
+  .form-container {
+    width: 420px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* Styling Container */
+  .container {
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  /* Styling Container One */
+  .container-1 {
+    max-width: 530px;
+  }
+
+  /* Styling Container Two */
+  .trial {
+    width: 530px;
+  }
+
+  .form-container {
+    width: 530px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  /* Styling Container */
+  .container {
+    margin: 100px auto 70px auto;
+    gap: 80px;
+    flex-direction: column;
+  }
+
+  /* Styling Container One */
+  .container-1 {
+    max-width: 400px;
+  }
+
+  .top p {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .bottom p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .top p br {
+    display: none;
+  }
+
+  .bottom p br {
+    display: none;
+  }
+
+  /* Styling Container Two */
+  .trial {
+    width: 340px;
+    height: 100px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 40px 30px;
+  }
+
+  input {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Styling Container */
+  .container {
+    margin: 100px auto 70px auto;
+    gap: 80px;
+    flex-direction: column;
+  }
+
+  /* Styling Container One */
+  .container-1 {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .top p {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .bottom p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .top p br {
+    display: none;
+  }
+
+  .bottom p br {
+    display: none;
+  }
+
+  /* Styling Container Two */
+  .trial {
+    max-width: 340px;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    padding: 0 50px;
+  }
+
+  .form-container {
+    max-width: 340px;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  input {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+}
