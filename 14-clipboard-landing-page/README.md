@@ -52,4 +52,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - Website - [Moyinoluwa Adelowo](https://moyinadelowo.vercel.app/)
 - Frontend Mentor - [@Moyinoluwa-10](https://www.frontendmentor.io/profile/Moyinoluwa-10)
 - Twitter - [@MoyinAdelowo](https://www.twitter.com/MoyinAdelowo)
-- LinkedIn - [Moyinoluwa Adelowo](https://www.linkedin.com/in/moyinoluwa-adelowo/)**
+- LinkedIn - [Moyinoluwa Adelowo](https://www.linkedin.com/in/moyinoluwa-adelowo/)
