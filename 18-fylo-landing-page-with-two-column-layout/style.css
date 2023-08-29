@@ -1,0 +1,986 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* Accent */
+
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* ### Neutral */
+
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+
+  /* Edited */
+  --Bright-Blue-1: hsla(224, 93%, 58%, 0.7);
+  --Moderate-Cyan-1: hsl(170, 45%, 43%, 0.6);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Styling Header Section */
+header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 50px;
+}
+
+header div nav a {
+  padding: 0 30px;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Styling Section One */
+#section1 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 50px 150px 50px;
+  margin-top: 80px;
+}
+
+/* Styling Section One Text */
+#section1 .headings {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  font-size: 36px;
+  line-height: 50px;
+}
+
+#section1 .wordings {
+  color: var(--Very-Dark-Blue);
+  font-size: 16px;
+  margin-top: -20px;
+  line-height: 24px;
+}
+
+/* Styling Section One Form */
+#section1 input {
+  width: 233px;
+  max-width: 100%;
+  padding: 11px 20px;
+  border: 2px solid var(--Light-Gray);
+  outline: none;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+#section1 button {
+  width: 180px;
+  max-width: 100%;
+  padding: 13px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--Bright-Blue);
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+#section1 button:hover {
+  background-color: var(--Bright-Blue-1);
+}
+
+#section1 small {
+  color: rgb(194, 90, 90);
+  display: none;
+}
+
+/* Styling Section One Image */
+#section1 img {
+  width: 500px;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+/* Styling Empty Background */
+#empty {
+  background-image: url(./images/bg-curve-desktop.svg);
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Styling Section Two */
+#section2 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: var(--Light-Grayish-Blue);
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-top: -5px;
+}
+
+/* Styling Section Two Text */
+#section2 .headings {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  font-size: 35px;
+}
+
+#section2 .wordings {
+  color: var(--Very-Dark-Blue);
+  font-size: 14.5px;
+}
+
+#section2 .works {
+  color: var(--Moderate-Cyan);
+  cursor: pointer;
+}
+
+#section2 .works:hover {
+  color: var(--Moderate-Cyan-1);
+}
+
+hr {
+  border-width: 0;
+  height: 1px;
+  background-color: var(--Moderate-Cyan);
+  width: 29%;
+  max-width: 100%;
+  margin-top: -16px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+hr:hover {
+  background-color: var(--Moderate-Cyan-1);
+}
+
+/* Styling Section Two Box */
+#section2 .box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  width: 270px;
+  max-width: 100%;
+  box-shadow: 0 0 15px var(--Light-Gray);
+  margin-top: 40px;
+}
+
+#section2 #box-wordings {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--Very-Dark-Blue);
+}
+
+#section2 #avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#section2 #box-image {
+  display: flex;
+  align-items: center;
+}
+
+#section2 #box-text {
+  margin-left: 10px;
+  line-height: 13px;
+}
+
+#section2 #span-top {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  font-size: 11px;
+}
+
+#section2 #span-bottom {
+  color: var(--Desaturated-Blue);
+  font-size: 7.5px;
+  font-weight: 700;
+}
+
+#section2 #img {
+  width: 500px;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+/* Styling Section Three */
+#section3 {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--Desaturated-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 90px 90px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling Section Three Text */
+#section3 .headings {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+#section3 .wordings {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+/* Styling Section Three Form */
+#section3 input {
+  width: 350px;
+  max-width: 100%;
+  padding: 13px 20px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+#section3 button {
+  width: 200px;
+  max-width: 100%;
+  padding: 13px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--Bright-Blue);
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-top: 18px;
+}
+
+#section3 button:hover {
+  background-color: var(--Bright-Blue-1);
+}
+
+#section3 small {
+  color: var(--Light-Grayish-Blue);
+  display: none;
+}
+
+/* Styling Footer */
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding: 100px 150px 50px 30px;
+}
+
+footer #about {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  line-height: 35px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .iconics {
+  margin-right: 20px;
+}
+
+footer .links li {
+  cursor: pointer;
+}
+
+footer .links li:hover {
+  color: var(--Bright-Blue-1);
+}
+
+footer #icons {
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+footer i {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: var(--Bright-Blue-1);
+  border: 1px solid var(--Bright-Blue-1);
+}
+
+footer p {
+  margin-top: 30px;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsiveness */
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+  #section1 input {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  #section1 button {
+    width: 342px;
+  }
+
+  #section3 {
+    padding: 90px 30px 60px 30px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  /* General Styling */
+  * {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Styling Header */
+  header {
+    padding: 30px 0px 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header #logo {
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  header nav {
+    width: auto;
+    margin-top: -5px;
+    margin-left: 100px;
+  }
+
+  header div nav a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  /* Styling Section One */
+  #section1 {
+    flex-direction: column;
+    padding: 60px 23px 120px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section One Text */
+  #section1 .headings {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 50px;
+  }
+
+  #section1 .headings br {
+    display: none;
+  }
+
+  #section1 .wordings {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+
+  #section1 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section One Form */
+  #section1 input {
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  #section1 button {
+    width: 400px;
+  }
+
+  #section1 .image {
+    order: -1;
+  }
+
+  /* Styling Empty Background */
+  #empty {
+    background-image: url(./images/bg-curve-mobile.svg);
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat-x;
+  }
+
+  /* Styling Section Two */
+  #section2 {
+    flex-direction: column;
+    padding: 0 23px 100px 23px;
+    margin-top: -50px;
+  }
+
+  /* Styling Section Two Text */
+  #section2 .headings {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #section2 .wordings {
+    color: var(--Desaturated-Blue);
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  #section2 .wordings br {
+    display: none;
+  }
+
+  #section2 .works {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+  hr {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: -25px;
+  }
+
+  #section2 .img {
+    width: auto;
+  }
+
+  /* Styling Section Two Box */
+  #section2 .box {
+    width: 470px;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #section2 #box-text {
+    width: auto;
+    margin-left: -350px;
+  }
+
+  #section2 #box-wordings {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  #section2 .image {
+    order: -1;
+    margin-left: 100px;
+    width: auto;
+  }
+
+  #section2 #img {
+    margin-top: 70px;
+  }
+
+  /* Styling Section Three */
+  #section3 {
+    flex-direction: column;
+    padding: 40px 23px 80px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section Three Text */
+  #section3 .headings {
+    font-size: 40px;
+  }
+
+  #section3 .wordings {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  #section3 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section Three Form */
+  #section3 input {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+
+  #section3 button {
+    width: 400px;
+  }
+
+  /* Styling Footer Section */
+  footer {
+    padding: 100px 0 80px 0;
+    font-size: 25px;
+  }
+
+  footer #about {
+    flex-direction: column;
+  }
+
+  footer .foot {
+    width: auto;
+  }
+
+  footer #icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  footer i {
+    width: auto;
+  }
+
+  footer p {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  /* General Styling */
+  * {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Styling Header */
+  header {
+    padding: 30px 0px 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header #logo {
+    width: 140px;
+    margin-left: 30px;
+  }
+
+  header nav {
+    width: auto;
+    margin-top: -5px;
+    margin-left: 30px;
+  }
+
+  header div nav a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+
+  /* Styling Section One */
+  #section1 {
+    flex-direction: column;
+    padding: 60px 23px 120px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section One Text */
+  #section1 .headings {
+    font-size: 26px;
+    line-height: 35px;
+    margin-top: 50px;
+  }
+
+  #section1 .headings br {
+    display: none;
+  }
+
+  #section1 .wordings {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  #section1 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section One Form */
+  #section1 input {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  #section1 button {
+    width: 300px;
+  }
+
+  #section1 .image {
+    order: -1;
+  }
+
+  /* Styling Empty Background */
+  #empty {
+    background-image: url(./images/bg-curve-mobile.svg);
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat-x;
+  }
+
+  /* Styling Section Two */
+  #section2 {
+    flex-direction: column;
+    padding: 0 23px 100px 23px;
+    margin-top: -50px;
+  }
+
+  /* Styling Section Two Text */
+  #section2 .headings {
+    font-size: 23px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #section2 .wordings {
+    color: var(--Desaturated-Blue);
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #section2 .wordings br {
+    display: none;
+  }
+
+  #section2 .works {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  hr {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: -13px;
+  }
+
+  #section2 .img {
+    width: auto;
+  }
+
+  /* Styling Section Two Box */
+  #section2 .box {
+    width: 320px;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #section2 #box-text {
+    margin-left: -160px;
+  }
+
+  #section2 .image {
+    order: -1;
+  }
+
+  #section2 #img {
+    margin-top: 70px;
+  }
+
+  /* Styling Section Three */
+  #section3 {
+    flex-direction: column;
+    padding: 40px 23px 80px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section Three Text */
+  #section3 .headings {
+    font-size: 25px;
+  }
+
+  #section3 .wordings {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  #section3 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section Three Form */
+  #section3 input {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  #section3 button {
+    width: 250px;
+  }
+
+  /* Styling Footer Section */
+  footer {
+    padding: 100px 0 80px 0;
+    font-size: 20px;
+  }
+
+  footer #about {
+    flex-direction: column;
+  }
+
+  footer .foot {
+    width: auto;
+  }
+
+  footer #icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  footer i {
+    width: auto;
+  }
+
+  footer p {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* General Styling */
+  * {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Styling Header */
+  header {
+    padding: 30px 10px 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header #logo {
+    width: 100px;
+    margin-left: 30px;
+  }
+
+  header nav {
+    width: auto;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  header div nav a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+
+  /* Styling Section One */
+  #section1 {
+    flex-direction: column;
+    padding: 60px 23px 120px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section One Text */
+  #section1 .headings {
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 50px;
+  }
+
+  #section1 .headings br {
+    display: none;
+  }
+
+  #section1 .wordings {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  #section1 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section One Form */
+  #section1 input {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  #section1 button {
+    width: 300px;
+  }
+
+  #section1 .image {
+    order: -1;
+  }
+
+  /* Styling Empty Background */
+  #empty {
+    background-image: url(./images/bg-curve-mobile.svg);
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat-x;
+  }
+
+  /* Styling Section Two */
+  #section2 {
+    flex-direction: column;
+    padding: 0 23px 100px 23px;
+    margin-top: -50px;
+  }
+
+  /* Styling Section Two Text */
+  #section2 .headings {
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #section2 .wordings {
+    color: var(--Desaturated-Blue);
+    font-size: 14.5px;
+    line-height: 22px;
+  }
+
+  #section2 .wordings br {
+    display: none;
+  }
+
+  #section2 .works {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  hr {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: -13px;
+  }
+
+  #section2 .img {
+    width: auto;
+  }
+
+  /* Styling Section Two Box */
+  #section2 .box {
+    width: 320px;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #section2 #box-text {
+    margin-left: -160px;
+  }
+
+  #section2 .image {
+    order: -1;
+  }
+
+  #section2 #img {
+    margin-top: 70px;
+  }
+
+  /* Styling Section Three */
+  #section3 {
+    flex-direction: column;
+    padding: 40px 23px 80px 23px;
+    text-align: center;
+  }
+
+  /* Styling Section Three Text */
+  #section3 .headings {
+    font-size: 23px;
+  }
+
+  #section3 .wordings {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  #section3 .wordings br {
+    display: none;
+  }
+
+  /* Styling Section Three Form */
+  #section3 input {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  #section3 button {
+    width: 250px;
+  }
+
+  /* Styling Footer Section */
+  footer {
+    padding: 100px 0 80px 0;
+  }
+
+  footer #about {
+    flex-direction: column;
+  }
+
+  footer .foot {
+    width: auto;
+  }
+
+  footer #icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  footer i {
+    width: auto;
+  }
+
+  footer p {
+    margin-top: 70px;
+  }
+}
