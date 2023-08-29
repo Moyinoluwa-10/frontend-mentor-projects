@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.category {
+  @apply flex items-center justify-between p-3 rounded-lg mb-3 text-black;
+}
+
+.category img {
+  @apply mr-2 inline;
+}
+
+.category .category-score {
+  @apply font-bold;
+}
