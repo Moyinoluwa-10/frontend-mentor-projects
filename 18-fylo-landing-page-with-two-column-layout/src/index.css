@@ -1,0 +1,50 @@
+/* Google Fonts */
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors */
+
+  /* Primary */
+  
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  
+  /* Accent */
+  
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  
+  /* ### Neutral */
+  
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+  
+  /* Edited */
+  --Bright-Blue-1: hsla(224, 93%, 58%, 0.7);
+  --Bright-Blue-2: hsl(224, 93%, 75%);
+  --Moderate-Cyan-1: hsl(170, 45%, 43%, 0.6);
+
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}

@@ -1,0 +1,263 @@
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px 150px 50px;
+    gap: 50px;
+}
+
+#section1 .headings {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+    font-size: 36px;
+    line-height: 50px;
+}
+
+#section1 .wordings {
+    color: var(--Very-Dark-Blue);
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -20px;
+}
+
+#section1 form {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+}
+
+#section1 .box1 {
+    margin-right: 15px;
+}
+
+#section1 input {
+    width: 275px;
+    max-width: 100%;
+    padding: 11px 20px;
+    border: 1px solid var(--Very-Dark-Blue);
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: var(--Light-Gray);
+}
+
+#section1 button {
+    width: 180px;
+    max-width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--Bright-Blue);
+    color: white;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: all  0.3s ease;
+}
+
+#section1 button:hover {
+    background-color: var(--Bright-Blue-1);
+}
+
+#section1 small {
+    color: rgb(210, 84, 84);
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: none;
+}
+
+#section1 input:invalid {
+    border: 1px solid rgb(210, 84, 84);
+}
+
+#section1 input:invalid~div small {
+    display: block;
+}
+
+#section1 img {
+    width: 500px;
+    max-width: 100%;
+}
+
+@media screen and (min-width:1000px) and (max-width:1150px) {
+
+    #section1 .headings {
+        max-width: 550px;
+    }
+
+    #section1 .headings br {
+        display: none;
+    }
+
+    #section1 .wordings {
+        max-width: 550px;
+    }
+
+    #section1 .wordings br {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    
+    #section1 {    
+        flex-direction: column;
+        padding: 60px 50px 120px 50px;
+        text-align: center;
+    }
+
+    #section1 .headings {
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    #section1 .headings br {
+        display: none;
+    }
+
+    #section1 .wordings {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #section1 .wordings br {
+        display: none;
+    }
+
+    #section1 form {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #section1 input {
+        width: 350px;
+    }
+
+    #section1 button {
+        width: 200px;
+    }
+
+    #section1 .image {
+        order: -1;
+    }
+
+}
+
+@media screen and (min-width:500px) and (max-width:700px) {
+    
+    #section1 {    
+        flex-direction: column;
+        padding: 60px 50px 120px 50px;
+        text-align: center;
+    }
+
+    #section1 .headings {
+        font-size: 26px;
+        line-height: 33px;
+        margin-top: 50px;
+    }
+
+    #section1 .headings br {
+        display: none;
+    }
+
+    #section1 .wordings {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: -10px;
+    }
+
+    #section1 .wordings br {
+        display: none;
+    }
+
+    #section1 form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #section1 .box1 {
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
+
+    #section1 input {
+        width: 300px;
+    }
+
+    #section1 button {
+        width: 300px;
+    }
+
+    #section1 .image {
+        order: -1;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    
+    #section1 {    
+        flex-direction: column;
+        padding: 60px 25px 120px 25px;
+        text-align: center;
+    }
+
+    #section1 .headings {
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 50px;
+    }
+
+    #section1 .headings br {
+        display: none;
+    }
+
+    #section1 .wordings {
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: -10px;
+    }
+
+    #section1 .wordings br {
+        display: none;
+    }
+
+    #section1 form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #section1 .box1 {
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
+
+    #section1 input {
+        width: 300px;
+        /* max-width: 90%; */
+    }
+
+    #section1 button {
+        width: 300px;
+    }
+
+    #section1 .image {
+        order: -1;
+    }
+
+}
