@@ -21,3 +21,12 @@
   @apply bg-green text-dark-grey;
 }
 
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 66%, 58%);
+}
+
