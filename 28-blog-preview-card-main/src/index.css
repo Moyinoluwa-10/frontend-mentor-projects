@@ -1,0 +1,32 @@
+:root {
+  font-family: "Figtree", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.hero:hover {
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 66%, 58%);
+}
+
