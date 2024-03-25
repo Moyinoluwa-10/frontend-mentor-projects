@@ -1,0 +1,23 @@
+:root {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-grey py-2 rounded-md font-bold transition-all duration-300;
+}
+
+.btn:hover {
+  @apply bg-green text-dark-grey;
+}
+
