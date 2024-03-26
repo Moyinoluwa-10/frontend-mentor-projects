@@ -1,0 +1,27 @@
+:root {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background-image: url(/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/background-pattern-desktop.svg);
+  }
+}
+
