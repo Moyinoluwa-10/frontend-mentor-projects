@@ -1,6 +1,7 @@
 import { useState } from "react";
 import faqs from "./data/faqs.json";
 import FaqItem from "./components/FaqItem.jsx";
+import Footer from "./components/Footer";
 
 function App() {
   const [isActive, setIsActive] = useState<number | null>(null);
@@ -30,6 +31,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
