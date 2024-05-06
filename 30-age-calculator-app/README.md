@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://gitlab.com/Moyinoluwa-10/frontend-mentor-age-calculator-apps)
+- Solution URL: [Solution](https://gitlab.com/Moyinoluwa-10/frontend-mentor-age-calculator-app)
 - Live Site URL: [Live site](https://age-calcapp.netlify.app/)
 
 ## My process
